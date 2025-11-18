@@ -1,0 +1,19 @@
+.content {
+   color: var(--text);
+   min-width: 30vw;
+   max-width: 70vw;
+   width:     50em;
+   text-align: left;
+   hyphens: none;
+   text-justify: inter-word;
+   font-size: .7em;
+   padding-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+   .content {
+      hyphens: auto;
+      text-align: justify;
+      text-justify: auto;
+   }  
+}

@@ -1,0 +1,94 @@
+.title-name-card {
+  display: flex;
+  align-items: center;
+  transition: width .25s, height .25s, background-color .5s ease-in-out, color .5s ease-in-out;
+  min-width: 10em;
+}
+
+.profile-image {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 33px;
+  transition: width .25s, height .25s, border-radius 0.2s, scale .1s, ease-in-out;
+  box-shadow: 6px 6px 15px 15px var(--soft-glow);
+}
+
+.easter {
+  /* egg shape */
+  width: 4.90em;
+  height: 6em;
+  border-radius: 50% 50% 50% 50% / 62% 62% 42% 42%;
+}
+
+.profile-image:hover {
+  border-radius: 20%;
+}
+
+.profile-image:active {
+  animation: click-anim .25s;
+}
+
+@keyframes click-anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.942);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.profile-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: font-size .2s, display .25s, font-weight .25s;
+}
+
+.profile-subtitle {
+  font-size: .9em;
+  font-weight: bold;
+  color: var(--soft-text);
+  transition: all .2s, opacity .35s, display .25s;
+  white-space: nowrap;
+}
+
+.profile-sm {
+  display: block;
+  font-size: .75em;
+  width: 100%;
+  text-align: left;
+  padding-top: 24px;
+  padding-bottom: 12px;
+  transition: all .2s, opacity .25s, display .25s;
+}
+
+/* header small update - hacky love */
+.header.sticky .title-name-card {
+  padding: 3px;
+}
+
+.header.sticky .profile-name {
+  font-size: .85em;
+  font-weight: 400;
+}
+
+.header.sticky .profile-image {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 18px;
+}
+
+.header.sticky .profile-subtitle {
+  opacity: 0;
+  display: none;
+}
+
+.header.sticky .profile-sm {
+  font-size: .4em;
+  padding-top: 0px;
+  padding-bottom: 3px;
+}

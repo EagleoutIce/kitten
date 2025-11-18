@@ -1,0 +1,23 @@
+
+.small-media-icon {
+   background: none;
+   opacity: 0.35;
+   font-size: 1em;
+   transition: all 0.25s ease-in-out;
+   padding-right: 15px;
+}
+
+.header.sticky .small-media-icon {
+   padding-right: 10px;
+}
+
+.small-media-icon.small {
+   font-size: .8rem;
+   vertical-align: super;
+   padding-right: 0px
+}
+
+.small-media-icon:hover,
+.small-media-icon:focus {
+   opacity: 1;
+}

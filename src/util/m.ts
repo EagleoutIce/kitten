@@ -1,0 +1,1 @@
+export const pageName = [[...'sp'].reverse().join(''), 0x106b + '-'].reverse().join('');
