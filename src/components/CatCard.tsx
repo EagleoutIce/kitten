@@ -37,9 +37,9 @@ export function CatCard({ name, description, id, imageSrc: image, siblings, birt
             {tookIn && <><span>Took in: {formatDate(tookIn)}</span><br/></>}
             {adoptionDate && <><span>Adopted: {formatDate(adoptionDate)}</span><br/></>}
             {specialNeeds && <><span>Special Needs: {specialNeeds}</span><br/></>}
-            {siblings?.map(s => 
+            {siblings && <><span>Siblings: {siblings?.map(s => 
                <span key={`crumb-${s.id}`}>{s.name}</span>
-            )}
+            )}</span> </>}
          </div>
          </div>
    </a>;
