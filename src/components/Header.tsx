@@ -1,6 +1,6 @@
 import { PropsWithChildren, useEffect, useRef } from "react";
 import "./Header.css";
-import { onMobileDevice } from "../util/mobile";
+import { onMobileDevice } from "../util/mobile.js";
 
 interface HeaderProps extends PropsWithChildren<{}> {
 }

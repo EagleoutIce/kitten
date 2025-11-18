@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect,  useState } from "react";
 import "./QuickLinks.css";
-import { headerIsSticky } from "./Header";
+import { headerIsSticky } from "./Header.js";
 
 export interface QuickLinkProps {
    readonly sections: {
